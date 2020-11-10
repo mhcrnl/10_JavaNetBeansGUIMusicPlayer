@@ -1,0 +1,64 @@
+<ges version='0.1'>
+  <project properties='properties;' metadatas='metadatas, name=(string)&quot;New\ Project&quot;, author=(string)mhcrnl, render-scale=(double)100;'>
+    <encoding-profiles>
+      <encoding-profile name='pitivi-profile' description='Pitivi encoding profile' type='container' preset-name='webmmux' format='video/webm' >
+        <stream-profile parent='pitivi-profile' id='0' type='video' presence='1' format='video/x-vp8, profile=(string){ 0, 1, 2, 3 }' preset='encoder_settings_01c8ab7b10c34cd984323020b1878092' preset-properties='properties, qos=(boolean)false, end-usage=(int)0, target-bitrate=(int)256000, min-quantizer=(int)4, max-quantizer=(int)63, dropframe-threshold=(int)0, resize-allowed=(boolean)false, resize-up-threshold=(int)60, resize-down-threshold=(int)30, undershoot=(int)100, overshoot=(int)100, buffer-size=(int)6000, buffer-initial-size=(int)4000, buffer-optimal-size=(int)5000, twopass-vbr-bias=(int)50, twopass-vbr-minsection=(int)0, twopass-vbr-maxsection=(int)400, keyframe-mode=(int)1, keyframe-max-dist=(int)128, temporal-scalability-number-layers=(int)1, temporal-scalability-target-bitrate=(GValueArray)&lt;  &gt;, temporal-scalability-rate-decimator=(GValueArray)&lt;  &gt;, temporal-scalability-periodicity=(int)0, temporal-scalability-layer-id=(GValueArray)&lt;  &gt;, multipass-mode=(int)0, multipass-cache-file=(string)multipass.cache, error-resilient=(int)0, lag-in-frames=(int)0, threads=(int)0, deadline=(gint64)0, horizontal-scaling-mode=(int)0, vertical-scaling-mode=(int)0, cpu-used=(int)0, auto-alt-ref=(boolean)false, noise-sensitivity=(int)0, sharpness=(int)0, static-threshold=(int)0, token-partitions=(int)0, arnr-maxframes=(int)0, arnr-strength=(int)3, arnr-type=(int)3, tuning=(int)0, cq-level=(int)10, max-intra-bitrate=(int)0, timebase=(fraction)0/1;' preset-name='vp8enc' restriction='video/x-raw, framerate=(fraction)30/1, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1' pass='0' variableframerate='0' />
+        <stream-profile parent='pitivi-profile' id='1' type='audio' presence='1' format='audio/x-vorbis, rate=(int)[ 1, 200000 ], channels=(int)[ 1, 255 ]' preset='encoder_settings_9e5fe8d50da849009419bf45ed3aba70' preset-properties='properties, perfect-timestamp=(boolean)true, hard-resync=(boolean)false, tolerance=(gint64)40000000, max-bitrate=(int)-1, bitrate=(int)-1, min-bitrate=(int)-1, quality=(float)0.30000001192092896, managed=(boolean)false;' preset-name='vorbisenc' restriction='audio/x-raw, rate=(int)44100, channels=(int)2' />
+      </encoding-profile>
+    </encoding-profiles>
+    <ressources>
+      <asset id='file:///home/mhcrnl/NetBeansProjects/10_JavaNetBeansGUIMusicPlayer/RecApp-2020-11-10-19:07:45.webm' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)97987087671;' metadatas='metadatas, video-codec=(string)&quot;VP8\ video&quot;, container-format=(string)Matroska, file-size=(guint64)4548479;' />
+      <asset id='GESTitleClip' extractable-type-name='GESTitleClip' properties='properties;' metadatas='metadatas;' />
+      <asset id='file:///home/mhcrnl/NetBeansProjects/10_JavaNetBeansGUIMusicPlayer/file_example_WAV_5MG.wav' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)2, duration=(guint64)29628662132;' metadatas='metadatas, container-format=(string)WAV, bitrate=(uint)1411200, audio-codec=(string)&quot;Uncompressed\ 16-bit\ PCM\ audio&quot;, title=(string)&quot;Impact\ Moderato&quot;, album=(string)&quot;YouTube\ Audio\ Library&quot;, artist=(string)&quot;Kevin\ MacLeod&quot;, genre=(string)Cinematic, file-size=(guint64)5226766;' />
+    </ressources>
+    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)315038149;' metadatas='metadatas, duration=(guint64)102162817169;'>
+      <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;video/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;video/x-raw\,\ width\=\(int\)1920\,\ height\=\(int\)1080\,\ framerate\=\(fraction\)30/1\,\ pixel-aspect-ratio\=\(fraction\)1/1&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <track caps='audio/x-raw(ANY)' track-type='2' track-id='1' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;audio/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;audio/x-raw\,\ rate\=\(int\)44100\,\ channels\=\(int\)2&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <layer priority='0' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1;'>
+        <clip id='0' asset-id='GESTitleClip' type-name='GESTitleClip' layer-priority='0' track-types='6' start='0' duration='5000000000' inpoint='0' rate='0' properties='properties, name=(string)titleclip0;' metadatas='metadatas;'>
+          <source track-id='0' children-properties='properties, GstFramePositioner::alpha=(double)1, GstBaseTextOverlay::color=(uint)4294967295, GstDeinterlace::fields=(int)0, GstBaseTextOverlay::font-desc=(string)&quot;Serif\ 36&quot;, GstVideoTestSrc::foreground-color=(uint)0, GstBaseTextOverlay::halignment=(int)1, GstFramePositioner::height=(int)1080, GstDeinterlace::mode=(int)0, GstBaseTextOverlay::outline-color=(uint)4278190080, GstVideoTestSrc::pattern=(int)17, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstBaseTextOverlay::shaded-background=(boolean)false, GstBaseTextOverlay::text=(string)&quot;Java\ NetBeans\ 8.2\ GUI\ Music\ Player\ for\ wav\ files&quot;, GstDeinterlace::tff=(int)0, GstBaseTextOverlay::valignment=(int)4, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1920, GstBaseTextOverlay::x-absolute=(double)0.5, GstBaseTextOverlay::xpos=(double)0.5, GstBaseTextOverlay::y-absolute=(double)0.5, GstBaseTextOverlay::ypos=(double)0.5;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  5000000000:1 '/>
+          </source>
+        </clip>
+        <clip id='1' asset-id='GESTitleClip' type-name='GESTitleClip' layer-priority='0' track-types='6' start='96922747725' duration='5000000000' inpoint='0' rate='0' properties='properties, name=(string)titleclip1;' metadatas='metadatas;'>
+          <source track-id='0' children-properties='properties, GstFramePositioner::alpha=(double)0.99410898832962979, GstBaseTextOverlay::color=(uint)4294967295, GstDeinterlace::fields=(int)0, GstBaseTextOverlay::font-desc=(string)&quot;Serif\ 36&quot;, GstVideoTestSrc::foreground-color=(uint)0, GstBaseTextOverlay::halignment=(int)1, GstFramePositioner::height=(int)1080, GstDeinterlace::mode=(int)0, GstBaseTextOverlay::outline-color=(uint)4278190080, GstVideoTestSrc::pattern=(int)17, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstBaseTextOverlay::shaded-background=(boolean)false, GstBaseTextOverlay::text=(string)END, GstDeinterlace::tff=(int)0, GstBaseTextOverlay::valignment=(int)0, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1920, GstBaseTextOverlay::x-absolute=(double)0.5, GstBaseTextOverlay::xpos=(double)0.5, GstBaseTextOverlay::y-absolute=(double)0.5, GstBaseTextOverlay::ypos=(double)0.5;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:0.11634826711749793  5000000000:1 '/>
+          </source>
+        </clip>
+      </layer>
+      <layer priority='1' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1;'>
+        <clip id='2' asset-id='file:///home/mhcrnl/NetBeansProjects/10_JavaNetBeansGUIMusicPlayer/RecApp-2020-11-10-19:07:45.webm' type-name='GESUriClip' layer-priority='1' track-types='4' start='0' duration='97987087671' inpoint='0' rate='0' properties='properties, name=(string)uriclip0, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='0' children-properties='properties, GstFramePositioner::alpha=(double)1, GstDeinterlace::fields=(int)0, GstFramePositioner::height=(int)1080, GstDeinterlace::mode=(int)0, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstDeinterlace::tff=(int)0, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1920;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  97987087671:1 '/>
+          </source>
+        </clip>
+      </layer>
+      <layer priority='2' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1;'>
+        <clip id='3' asset-id='file:///home/mhcrnl/NetBeansProjects/10_JavaNetBeansGUIMusicPlayer/file_example_WAV_5MG.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='0' duration='29628662132' inpoint='0' rate='0' properties='properties, name=(string)uriclip1, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='1' children-properties='properties, GstVolume::mute=(boolean)false, GstVolume::volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  29628662132:0.10000000000000001 '/>
+          </source>
+        </clip>
+        <clip id='4' asset-id='file:///home/mhcrnl/NetBeansProjects/10_JavaNetBeansGUIMusicPlayer/file_example_WAV_5MG.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='29628662132' duration='29628662132' inpoint='0' rate='0' properties='properties, name=(string)uriclip2, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='1' children-properties='properties, GstVolume::mute=(boolean)false, GstVolume::volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  29628662132:0.10000000000000001 '/>
+          </source>
+        </clip>
+        <clip id='5' asset-id='file:///home/mhcrnl/NetBeansProjects/10_JavaNetBeansGUIMusicPlayer/file_example_WAV_5MG.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='59257324264' duration='29628662132' inpoint='0' rate='0' properties='properties, name=(string)uriclip3, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='1' children-properties='properties, GstVolume::mute=(boolean)false, GstVolume::volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  29628662132:0.10000000000000001 '/>
+          </source>
+        </clip>
+        <clip id='6' asset-id='file:///home/mhcrnl/NetBeansProjects/10_JavaNetBeansGUIMusicPlayer/file_example_WAV_5MG.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='88885986396' duration='13276830773' inpoint='0' rate='0' properties='properties, name=(string)uriclip4, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='1' children-properties='properties, GstVolume::mute=(boolean)false, GstVolume::volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000149011612  13276830773:0.10000000149011612 '/>
+          </source>
+        </clip>
+      </layer>
+      <layer priority='3' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1;'>
+      </layer>
+      <groups>
+      </groups>
+    </timeline>
+</project>
+</ges>
